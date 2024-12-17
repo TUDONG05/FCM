@@ -19,7 +19,7 @@ class FCM:
             hang=[]
             for j in range(self.n_clusters):
   
-                hang.append(random.choice([random.random() for i in range(1000)]))
+                hang.append(random.random())
 
     # def ktmttv(self):
     #         u=[]

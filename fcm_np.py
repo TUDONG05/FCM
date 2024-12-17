@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 # buoc 1:khoi tao ma tran thanh vien
 def ktmttv(data,cluster):
     np.random.seed(42)
@@ -15,16 +14,16 @@ def capnhat_tamcum(u,x,m):
 
 # buoc 3:cap nhat ma tran thanh vien
 def capnhat_mttv(u,x,centroid,m):
-    data,cluster = u.shape
-    kcach= np.zeros((data,cluster))
+    n_data,n_cluster = u.shape
+    kcach= np.zeros((n_data,n_cluster))
     
     # tinh khoang cach tu diem dl den cac tam cum
-    for i in range (cluster):
+    for i in range (n_cluster):
         kcach[:,i]= np.linalg.norm(x-centroid[i],axis=1)
     
     # cap nhat muc do thanh vien
-    for i in range (data):
-        for j in range(cluster):
+    for i in range (n_data):
+        for j in range(n_cluster):
             u[i,j] = 1.0 /np.sum((kcach[i,j]/ kcach[i,:])** (2/(m-1)))
     return u
 

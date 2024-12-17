@@ -1,4 +1,5 @@
 import random
+import numpy as np
 class FCM:
     def __init__(self, data, n_clusters, m=2, max_iter=100, epsilon=1e-5):
         self.data = data  #diem du lieu
@@ -21,11 +22,6 @@ class FCM:
   
                 hang.append(random.random())
 
-    # def ktmttv(self):
-    #         u=[]
-    #         for i in range(self.n_data):
-    #             for j in range(self.n_clusters):
-    #                 u.append(random.choice())
 # ta khoi tao cac gia tri ngau nhien tren tung hang,
 # chuan hoa sao cho cac tong cac ptu trong 1 hang = 1     
 #  sau do them cac hang do vao list u
@@ -91,7 +87,6 @@ class FCM:
             if self.sai_so(old_u) < self.epsilon:  
                 break
         return self.u, self.centroids
-
 
 
 

@@ -1,4 +1,4 @@
- import numpy as np
+import numpy as np
 # buoc 1:khoi tao ma tran thanh vien
 def ktmttv(data,cluster):
     np.random.seed(42)

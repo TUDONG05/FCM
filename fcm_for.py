@@ -12,9 +12,10 @@ class FCM:
         self.centroids = [0] * self.n_clusters  #tam cum
 
         
-    random.seed(42)
+    
     def ktmttv(self):
         """khoi tao ma tran thanh vien"""
+        random.seed(42)
         u=[]
         for i in range(self.n_data):
             hang=[]
@@ -81,16 +82,17 @@ class FCM:
 
     def fcm(self):
         for _ in range(self.max_iter):
-            old_u = self.u.copy()   #tao mot ban sao cua mttv
+            old_u=[]
+            for hang in self.u:
+                old_u.append(hang[:])
+
             self.capnhat_tamcum()  #cap nhat tam cum
             self.capnhat_mttv()  #cap nhat mttv
             if self.sai_so(old_u) < self.epsilon:  
                 break
         return self.u, self.centroids
 
-
-
-
+# du lieu dau vao
 data = [1, 3, 5, 7, 9]  
 n_clusters = 2  
 

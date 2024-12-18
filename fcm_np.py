@@ -60,8 +60,7 @@ print("Ma trận thành viên (u):")
 print(u)
 
 print("Tâm cụm:")
-print(centroids)
-
+print(centroids.flatten())
 
 
 

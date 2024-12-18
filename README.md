@@ -37,15 +37,21 @@
 
 # Bước 4:Kiểm tra điều kiện hội tụ:
 ## Nếu ma trận thành viên U thay đổi không đáng kể (theo ngưỡng epsilon) hoặc số vòng lặp đạt mức tối đa, thì dừng thuật toán.
+# 3. Cài đặt thuật toán bằng ngôn ngữ Python 
+## a) Sử dụng thư viện numpy kết hợp với lập trình hướng đối tượng 
+### • Nhập thư viện numpy 
+![img.png](img.png)
 
-# 3.Ưu điểm của FCM:
+
+
+# 4. Ưu điểm của FCM:
 ## Xử lý mờ: FCM phù hợp với dữ liệu không có ranh giới rõ ràng, giúp phân cụm linh hoạt hơn K-Means.
 ## Thông tin bổ sung: Mức độ thành viên cung cấp thêm thông tin về mối quan hệ giữa điểm dữ liệu và các cụm.
-# 4.Hạn chế của FCM
+# 5. Hạn chế của FCM
    ## • Phụ thuộc vào m: Chỉ số mờ m cần được chọn phù hợp, vì nó ảnh hưởng đến kết quả.
    ## • Nhạy cảm với điểm nhiễu: Giống K-Means, FCM dễ bị ảnh hưởng bởi các điểm dữ liệu nằm xa (outliers).
    ## • Số cụm cố định: Người dùng cần chỉ định trước số cụm C, có thể không phù hợp với dữ liệu thực tế.
-# 5.Ứng dụng
+# 6. Ứng dụng
 ## Xử lý ảnh: 
 ## Phân đoạn ảnh y tế (ví dụ: tách vùng não hoặc tế bào ung thư)m 
 ## Nhận dạng mẫu:phân loại các đối tượng trong ảnh(ví dụ người, động vật, đồ vật, ...)

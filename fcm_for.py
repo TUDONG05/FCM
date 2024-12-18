@@ -86,7 +86,7 @@ class FCM:
                 old_u.append(hang[:])
 
             self.capnhat_tamcum() # buoc 2: cap nhat tam cum
-            self.capnhat_mttv()  # buoc 3:cap nhat ma tran thanh vien
+            self.capnhat_mttv()  #cap nhat mttv
             if self.sai_so(old_u) < self.epsilon:  # buoc  4: kiem tra dieu kien hoi tu
                 break
         return self.u, self.centroids

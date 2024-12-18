@@ -1,4 +1,4 @@
-# Ứng dụng lập trình hướng đối tượng và Numpy trong Python để triển khai các thuật toán phân cụm.
+# Ứng dụng lập trình hướng đối tượng và Numpy trong Python để triển khai các thuật toán phân cụm mờ .
 # 1.Giới thiệu:
 ![img_22.png](img_22.png)
 
@@ -61,7 +61,7 @@
 ## b) Sử dụng vòng lặp for kết hợp với lập trình hướng đối tượng 
 ### • Nhập thư viện random 
 ![img_11.png](img_11.png)
-### • Khai báo lớp FCM và hàm khởi tạo: 
+### • Khai báo lớp FCM và hàm khởi tạo
 ![img_13.png](img_13.png)
 ### • Hàm khởi tạo ma trận thành viên ngẫu nhiên 
 ![img_14.png](img_14.png)

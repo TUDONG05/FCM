@@ -68,7 +68,7 @@
 ### • Hàm cập nhật tâm cụm 
 ![img_15.png](img_15.png)
 ### • Hàm tính khoảng cách từ điểm dữ liệu đến tâm cụm 
-![img_16.png](img_16.png)
+![img_23.png](img_23.png)
 ### • Hàm cập nhật ma trận thành viên 
 ![img_17.png](img_17.png)
 ### • Hàm tính sự chênh lệch giữa ma trận thành viên cũ và ma trận thành viên mới 

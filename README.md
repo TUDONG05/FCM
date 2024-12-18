@@ -16,22 +16,23 @@
 ![image](https://github.com/user-attachments/assets/89f09dae-dfa2-45d2-acfd-49c50d745335)
 
 ## Trong đó: 
-• vj : là tâm cụm thứ j
-• uij: mức độ thành viên của điểm dữ liệu i đối với cụm j.
-• N:là số điểm dữ liệu
-• xi: điểm dữ liệu thứ i.
-• m:chỉ số  mờ.
+### • vj : là tâm cụm thứ j
+### • uij: mức độ thành viên của điểm dữ liệu i đối với cụm j.
+### • N:là số điểm dữ liệu
+### • xi: điểm dữ liệu thứ i.
+### • m:chỉ số  mờ.
 # Bước 3 Cập nhật ma trận thành viên
-- Tính mức độ thành viên  cho từng điểm dữ liệu bằng công thức
-![image](https://github.com/user-attachments/assets/c6abfc93-4f8d-4121-a4c8-ae5ce436ac5b)
+## - Tính mức độ thành viên  cho từng điểm dữ liệu bằng công thức
+![image](https://github.com/user-attachments/assets/735d2acc-9aa1-456c-ac47-0b2c222b1f29)
 
-Trong đó: 
-• c là số cụm
-• xi: điểm dữ liệu thứ I
-• vj: tâm cụm thứ j
-• m: chỉ số mờ
+
+## Trong đó: 
+### • c là số cụm
+### • xi: điểm dữ liệu thứ I
+### • vj: tâm cụm thứ j
+### • m: chỉ số mờ
 
 
 
 # Bước 4:Kiểm tra điều kiện hội tụ:
-Nếu ma trận thành viên U thay đổi không đáng kể (theo ngưỡng epsilon) hoặc số vòng lặp đạt mức tối đa, thì dừng thuật toán.
+## Nếu ma trận thành viên U thay đổi không đáng kể (theo ngưỡng epsilon) hoặc số vòng lặp đạt mức tối đa, thì dừng thuật toán.

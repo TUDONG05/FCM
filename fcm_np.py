@@ -1,4 +1,5 @@
 import numpy as np
+
 # buoc 1:khoi tao ma tran thanh vien
 
 class FCM:
@@ -18,13 +19,13 @@ class FCM:
         u=u / np.sum(u,axis=1, keepdims=True)
         #  u chia cho tong cac muc do phu thuoc thanh phan de chuan hoa sao cho tong cac phan tu cung 1 hang bang 1
         return u
-    # buoc 2: cap nhat tam cum
+    
     def _capnhat_tamcum(self):
         new_u=self.u**self.m
         self.centroids = np.dot(new_u.T,self.x) / np.sum(new_u.T, axis=1, keepdims=True)
 
 
-    # buoc 3:cap nhat ma tran thanh vien
+ 
     def _capnhat_mttv(self):
         kcach= np.zeros((self.n_data,self.n_clusters))
         
@@ -42,24 +43,24 @@ class FCM:
     def fit(self):
         for i in range(self.max_iter):
             old_u = self.u.copy()
-            self._capnhat_tamcum()  # Cập nhật tâm cụm
-            self._capnhat_mttv()  # Cập nhật ma trận thành viên
-            if self._sai_so(old_u) < self.epsilon:  # Kiểm tra hội tụ
+            self._capnhat_tamcum()  # buoc 2: cap nhat tam cum
+            self._capnhat_mttv()     # buoc 3:cap nhat ma tran thanh vien
+            if self._sai_so(old_u) < self.epsilon:  # buoc  4: kiem tra dieu kien hoi tu
                 break
         return self.u, self.centroids
 
-# Dữ liệu đầu vào
+#du lieu dau vao
 x = [1, 3, 5, 7, 9]
 n_clusters = 2
 
-# Thực hiện FCM
+# thuc hien fcm 
 fcm = FCM(x, n_clusters)
 u, centroids = fcm.fit()
 
-print("Ma trận thành viên (u):")
+print("Ma tran thanh vien (u):")
 print(u)
 
-print("Tâm cụm:")
+print("Tam cum:")
 print(centroids.flatten())
 
 

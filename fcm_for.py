@@ -56,7 +56,7 @@ class FCM:
                 kc_hang.append(abs(self.data[i]-self.centroids[j]))
             kcach.append(kc_hang)
         return kcach
-# buoc 3:cap nhat ma tran thanh vien
+
     def capnhat_mttv(self):
         """cap nhat ma tran thanh vien"""
 
@@ -70,7 +70,6 @@ class FCM:
 
                         M+=(t/m) **2/(self.m-1)
                     self.u[i][j] =1/M
-# buoc 4
     def sai_so(self, old_u):
         """sai so giua cu va moi  de kiem tra dieu kien hoi tu"""
         ss = 0
@@ -86,9 +85,9 @@ class FCM:
             for hang in self.u:
                 old_u.append(hang[:])
 
-            self.capnhat_tamcum()  #cap nhat tam cum
-            self.capnhat_mttv()  #cap nhat mttv
-            if self.sai_so(old_u) < self.epsilon:  
+            self.capnhat_tamcum() # buoc 2: cap nhat tam cum
+            self.capnhat_mttv()  # buoc 3:cap nhat ma tran thanh vien
+            if self.sai_so(old_u) < self.epsilon:  # buoc  4: kiem tra dieu kien hoi tu
                 break
         return self.u, self.centroids
 
@@ -102,11 +101,11 @@ fcm = FCM(data, n_clusters)
 u, centroids = fcm.fcm()
 
 
-print("Ma trận thành viên (u):")
+print("Ma tran thanh vien (u):")
 for data in u:
     print(data)
 
-print("Tâm cụm:")
+print("Tam cum:")
 print(centroids)
 
         

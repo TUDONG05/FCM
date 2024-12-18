@@ -14,7 +14,7 @@
 
 ![image](https://github.com/user-attachments/assets/965f90a6-f3b7-4587-a896-7de84dbaed2c)
 
-# Bước 2:Cập nhật tâm cụm
+## Bước 2:Cập nhật tâm cụm
 ![image](https://github.com/user-attachments/assets/89f09dae-dfa2-45d2-acfd-49c50d745335)
 
 ## Trong đó: 
@@ -24,7 +24,7 @@
 ### • xi: điểm dữ liệu thứ i.
 ### • m:chỉ số  mờ.
 
-# Bước 3 Cập nhật ma trận thành viên
+## Bước 3 Cập nhật ma trận thành viên
 ## - Tính mức độ thành viên  cho từng điểm dữ liệu bằng công thức
 ![image](https://github.com/user-attachments/assets/735d2acc-9aa1-456c-ac47-0b2c222b1f29)
 
@@ -35,8 +35,8 @@
 ### • vj: tâm cụm thứ j
 ### • m: chỉ số mờ
 
-# Bước 4:Kiểm tra điều kiện hội tụ:
-## Nếu ma trận thành viên U thay đổi không đáng kể (theo ngưỡng epsilon) hoặc số vòng lặp đạt mức tối đa, thì dừng thuật toán.
+## Bước 4:Kiểm tra điều kiện hội tụ:
+### • Nếu ma trận thành viên U thay đổi không đáng kể (theo ngưỡng epsilon) hoặc số vòng lặp đạt mức tối đa, thì dừng thuật toán.
 # 3. Cài đặt thuật toán bằng ngôn ngữ Python 
 ## a) Sử dụng thư viện numpy kết hợp với lập trình hướng đối tượng 
 ### • Nhập thư viện numpy 

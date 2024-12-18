@@ -1,14 +1,15 @@
 import random
 class FCM:
     def __init__(self, data, n_clusters, m=2, max_iter=100, epsilon=1e-5):
-        self.data = data  #diem du lieu
-        self.n_clusters = n_clusters  #socum
-        self.m = m  #chi so mo
-        self.max_iter = max_iter #lap toi da  
-        self.epsilon = epsilon  #sai so epsilon
-        self.n_data = len(data)  #so diem du lieu
-        self.u = self.ktmttv() #ma tran thanh vien
-        self.centroids = [0] * self.n_clusters  #tam cum
+        self.data = data  #điểm dữ liệu
+        self.n_clusters = n_clusters  #số cụm
+        self.m = m  #chỉ số mờ
+        self.max_iter = max_iter #số lần lặp tối đa
+        self.epsilon = epsilon  # sai số epsilon
+        self.n_data = len(data)  #số điểm dữ liệu
+        self.u = self.ktmttv() #ma trận thành viên
+        self.centroids = [0] * self.n_clusters  #tâm cụm
+
 
         
     

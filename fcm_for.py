@@ -101,11 +101,11 @@ fcm = FCM(data, n_clusters)
 u, centroids = fcm.fit()
 
 
-print("Ma tran thanh vien (u):")
+print("Ma trận thành viên u :")
 for data in u:
     print(data)
 
-print("Tam cum:")
+print("Tâm cụm :")
 print(centroids)
 
         

@@ -13,7 +13,7 @@
 
 
 # Bước 2:Cập nhật tâm cụm
-        ![image](https://github.com/user-attachments/assets/89f09dae-dfa2-45d2-acfd-49c50d745335)
+![image](https://github.com/user-attachments/assets/89f09dae-dfa2-45d2-acfd-49c50d745335)
 
 ## Trong đó: 
 • vj : là tâm cụm thứ j

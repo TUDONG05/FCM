@@ -75,7 +75,7 @@
 ![img_18.png](img_18.png)
 ### • Hàm triển khai thuật toán Fuzzy C-Means 
 ![img_19.png](img_19.png)
-### • • Truyền dữ liệu và thực hiện 
+### • Truyền dữ liệu và thực hiện 
 ![img_20.png](img_20.png)
 ### • Kết quả thu được 
 ![img_21.png](img_21.png)

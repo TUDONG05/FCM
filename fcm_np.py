@@ -1,6 +1,4 @@
 import numpy as np
-
-
 class FCM:
     def __init__(self, x, n_clusters, m=2, max_iter=100, epsilon=1e-5):
         self.x = np.array(x, dtype=np.float64).reshape(-1, 1) # các điểm dữ liệu
@@ -8,7 +6,7 @@ class FCM:
         self.m = m  # chỉ số mờ
         self.max_iter = max_iter # số lần lặp tối  đa
         self.epsilon = epsilon  # sai số epsilon
-        self.n_data = self.x.shape[0] #số điểm dữ liệu
+        self.n_data = self.x.shape[0] # số điểm dữ liệu
         self.u = self._ktmttv() #ma trận thành viên
         self.centroids = np.zeros((self.n_clusters,1))# tâm cụm
     def _ktmttv(self):

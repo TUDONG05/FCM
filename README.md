@@ -1,6 +1,6 @@
 # Ứng dụng lập trình hướng đối tượng và Numpy trong Python để triển khai các thuật toán phân cụm.
 # 1.Giới thiệu:
-![image](https://github.com/user-attachments/assets/f2302a95-7ee0-495e-aa53-85d0b138abb3)
+![img_22.png](img_22.png)
 
 
 ## - Thuật toán FCM (Fuzzy C-Means) là một phương pháp phân cụm thuộc nhóm clustering trong Machine Learning. 

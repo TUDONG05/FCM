@@ -8,7 +8,8 @@
 • Chọn số lượng cụm C( do người dùng chỉ định)
 • Khởi tạo ngẫu nhiên các tâm cụm
 • Khởi tạo ma trận thành viên U ngẫu nhiên, đảm bảo với tổng mức độ thành viên của một điểm dữ liệu trên tất cả các cụm bằng 1: 
-    ![image](https://github.com/user-attachments/assets/4e64aa01-6bb1-4c44-8920-49eacf322d71)
+         ![image](https://github.com/user-attachments/assets/44ea30bf-a58f-4592-84b0-f31603f55e04)
+
 
 
 # Bước 2:Cập nhật tâm cụm

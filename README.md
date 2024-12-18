@@ -74,7 +74,7 @@
 ### • Hàm tính sự chênh lệch giữa ma trận thành viên cũ và ma trận thành viên mới 
 ![img_18.png](img_18.png)
 ### • Hàm triển khai thuật toán Fuzzy C-Means 
-![img_19.png](img_19.png)
+![img_24.png](img_24.png)
 ### • Truyền dữ liệu và thực hiện 
 ![img_20.png](img_20.png)
 ### • Kết quả thu được 

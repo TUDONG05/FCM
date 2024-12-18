@@ -1,5 +1,4 @@
 import random
-import numpy as np
 class FCM:
     def __init__(self, data, n_clusters, m=2, max_iter=100, epsilon=1e-5):
         self.data = data  #diem du lieu
@@ -20,17 +19,11 @@ class FCM:
         for i in range(self.n_data):
             hang=[]
             for j in range(self.n_clusters):
-  
-                hang.append(random.random())
-# ta khởi tạo các giá trị ngẫu nhiên trên từng hàng
-# chuẩn hóa đảm bảo tổng các phần tử trong hàng = 1
-# Sau đó thêm từ hàng vào ma trận thành viên
-
+                hang.append(random.random()) # ta khởi tạo các giá trị ngẫu nhiên trên từng hàng
             tong_hang=sum(hang)
             for k in range(len(hang)):
-                hang[k]/=tong_hang
-
-            u.append(hang)
+                hang[k]/=tong_hang # chuẩn hóa đảm bảo tổng các phần tử trong hàng = 1
+            u.append(hang) # Sau đó thêm từ hàng vào ma trận thành viên
         return u
 
     def capnhat_tamcum(self):
@@ -94,7 +87,7 @@ class FCM:
 
 #dữ liệu đầu vào
 data = [1, 3, 5, 7, 9]  
-n_clusters = 2  
+n_clusters = 2
 
 #thực hiện thuật toán FCM
 fcm = FCM(data, n_clusters)

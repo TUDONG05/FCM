@@ -40,10 +40,45 @@
 # 3. Cài đặt thuật toán bằng ngôn ngữ Python 
 ## a) Sử dụng thư viện numpy kết hợp với lập trình hướng đối tượng 
 ### • Nhập thư viện numpy 
-![img.png](img.png)
+![img_3.png](img_3.png)
+### • Khai báo lớp FCM và hàm khởi tạo: 
+![img_2.png](img_2.png) 
+### • Hàm khởi tạo ma trận thành viên ngẫu nhiên 
+![img_4.png](img_4.png)
+### • Hàm cập nhật tâm cụm 
+![img_5.png](img_5.png)
+### • Hàm cập nhật ma trận thành viên 
+![img_6.png](img_6.png)
+### • Hàm tính sự chênh lệch giữa ma trận thành viên cũ và ma trận thành viên mới 
+![img_7.png](img_7.png)
+### • Hàm triển khai thuật toán Fuzzy C-Means 
+![img_8.png](img_8.png)
+### • Truyền dữ liệu và thực hiện 
+![img_9.png](img_9.png)
+### • Kết quả thu được 
+![img_10.png](img_10.png)
 
-
-
+## b) Sử dụng vòng lặp for kết hợp với lập trình hướng đối tượng 
+### • Nhập thư viện random 
+![img_11.png](img_11.png)
+### • Khai báo lớp FCM và hàm khởi tạo: 
+![img_13.png](img_13.png)
+### • Hàm khởi tạo ma trận thành viên ngẫu nhiên 
+![img_14.png](img_14.png)
+### • Hàm cập nhật tâm cụm 
+![img_15.png](img_15.png)
+### • Hàm tính khoảng cách từ điểm dữ liệu đến tâm cụm 
+![img_16.png](img_16.png)
+### • Hàm cập nhật ma trận thành viên 
+![img_17.png](img_17.png)
+### • Hàm tính sự chênh lệch giữa ma trận thành viên cũ và ma trận thành viên mới 
+![img_18.png](img_18.png)
+### • Hàm triển khai thuật toán Fuzzy C-Means 
+![img_19.png](img_19.png)
+### • • Truyền dữ liệu và thực hiện 
+![img_20.png](img_20.png)
+### • Kết quả thu được 
+![img_21.png](img_21.png)
 # 4. Ưu điểm của FCM:
 ## Xử lý mờ: FCM phù hợp với dữ liệu không có ranh giới rõ ràng, giúp phân cụm linh hoạt hơn K-Means.
 ## Thông tin bổ sung: Mức độ thành viên cung cấp thêm thông tin về mối quan hệ giữa điểm dữ liệu và các cụm.
@@ -53,8 +88,8 @@
    ## • Số cụm cố định: Người dùng cần chỉ định trước số cụm C, có thể không phù hợp với dữ liệu thực tế.
 # 6. Ứng dụng
 ## Xử lý ảnh: 
-## Phân đoạn ảnh y tế (ví dụ: tách vùng não hoặc tế bào ung thư)m 
-## Nhận dạng mẫu:phân loại các đối tượng trong ảnh(ví dụ người, động vật, đồ vật, ...)
+### • Phân đoạn ảnh y tế (ví dụ: tách vùng não hoặc tế bào ung thư)
+### •  Nhận dạng mẫu:phân loại các đối tượng trong ảnh(ví dụ người, động vật, đồ vật, ...)
 
 ## Khai phá dữ liệu:
 ### • Phân tích thị trường: Phân nhóm khách hàng dựa trên hành vi mua sắm, sở thích. 

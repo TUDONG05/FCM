@@ -10,9 +10,6 @@ class FCM:
         self.u = self.ktmttv() #ma trận thành viên
         self.centroids = [0] * self.n_clusters  #tâm cụm
 
-
-        
-    
     def ktmttv(self):
         """Khởi tạo ma trận thành viên """
         random.seed(42)

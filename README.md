@@ -23,7 +23,7 @@
 • m:chỉ số  mờ.
 # Bước 3 Cập nhật ma trận thành viên
 - Tính mức độ thành viên  cho từng điểm dữ liệu bằng công thức
-        ![image](https://github.com/user-attachments/assets/c6abfc93-4f8d-4121-a4c8-ae5ce436ac5b)
+![image](https://github.com/user-attachments/assets/c6abfc93-4f8d-4121-a4c8-ae5ce436ac5b)
 
 Trong đó: 
 • c là số cụm

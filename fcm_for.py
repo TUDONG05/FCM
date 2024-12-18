@@ -14,7 +14,7 @@ class FCM:
         
     
     def ktmttv(self):
-        """khoi tao ma tran thanh vien"""
+        """Khởi tạo ma trận thành viên """
         random.seed(42)
         u=[]
         for i in range(self.n_data):
@@ -22,11 +22,10 @@ class FCM:
             for j in range(self.n_clusters):
   
                 hang.append(random.random())
+# ta khởi tạo các giá trị ngẫu nhiên trên từng hàng
+# chuẩn hóa đảm bảo tổng các phần tử trong hàng = 1
+# Sau đó thêm từ hàng vào ma trận thành viên
 
-# ta khoi tao cac gia tri ngau nhien tren tung hang,
-# chuan hoa sao cho cac tong cac ptu trong 1 hang = 1     
-#  sau do them cac hang do vao list u
-           
             tong_hang=sum(hang)
             for k in range(len(hang)):
                 hang[k]/=tong_hang
@@ -35,7 +34,7 @@ class FCM:
         return u
 
     def capnhat_tamcum(self):
-        """cap nhat tam cum"""
+        """cập nhât tâm cụm """
         for j in range (self.n_clusters):
             tu =0
             mau =0
@@ -48,7 +47,7 @@ class FCM:
 
 
     def khoang_cach(self):
-        """tinh khoang cach tu diem dl den cac tam cum"""
+        """tính khoảng các từ điểm dữ liệu đến tâm cụm """
         kcach=[]
         for i in range (self.n_data):
             kc_hang=[]
@@ -58,7 +57,7 @@ class FCM:
         return kcach
 
     def capnhat_mttv(self):
-        """cap nhat ma tran thanh vien"""
+        """cập nhật ma trận thành viên """
 
         kc = self.khoang_cach()
         for i in range(self.n_data):
@@ -71,7 +70,7 @@ class FCM:
                         M+=(t/m) **2/(self.m-1)
                     self.u[i][j] =1/M
     def sai_so(self, old_u):
-        """sai so giua cu va moi  de kiem tra dieu kien hoi tu"""
+        """tính sự chênh lệch giữa ma trận thành viên cũ và ma trận thành viên mới """
         ss = 0
         for i in range(self.n_data):
             for j in range(self.n_clusters):
@@ -79,26 +78,27 @@ class FCM:
         return ss
     
 
-    def fcm(self):
+    def fit (self):
+        """thuật toán fcm """
         for _ in range(self.max_iter):
             old_u=[]
             for hang in self.u:
                 old_u.append(hang[:])
 
-            self.capnhat_tamcum() # buoc 2: cap nhat tam cum
-            self.capnhat_mttv()  #cap nhat mttv
-            if self.sai_so(old_u) < self.epsilon:  # buoc  4: kiem tra dieu kien hoi tu
+            self.capnhat_tamcum() # bước 2 : cập nhật tâm cụm
+            self.capnhat_mttv()  # bước 3 : cập nhật ma trận thành viên
+            if self.sai_so(old_u) < self.epsilon:  # bước 4 : kiểm tra điều kiện hội tụ
                 break
         return self.u, self.centroids
 
 
-# du lieu dau vao
+#dữ liệu đầu vào
 data = [1, 3, 5, 7, 9]  
 n_clusters = 2  
 
-# thuc hien fcm 
+#thực hiện thuật toán FCM
 fcm = FCM(data, n_clusters)
-u, centroids = fcm.fcm()
+u, centroids = fcm.fit()
 
 
 print("Ma tran thanh vien (u):")

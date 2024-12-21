@@ -55,14 +55,7 @@
 ## Sử dụng 
 ### • Mở fcm_for.py hoặc fcm_np.py và sử dụng câu lệnh :
 `python fcm_for.py` hoặc `fcm_np.py`
-
-### BTL_python/
-├── fcm.py                # Thuật toán FCM cơ bản
-├── fcm_np.py             # Thuật toán FCM với NumPy
-├── Dry_Bean_Dataset.csv  # Dữ liệu bộ Dry Bean
-├── README.md             # Hướng dẫn sử dụng
-└── requirements.txt      # Danh sách thư viện cần thiết
-
+GIT
 ## a) Sử dụng thư viện numpy kết hợp với lập trình hướng đối tượng 
 ### • Nhập thư viện numpy 
 ![img_3.png](img_3.png)

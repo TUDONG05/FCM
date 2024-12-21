@@ -38,6 +38,31 @@
 ## Bước 4:Kiểm tra điều kiện hội tụ:
 ### • Nếu ma trận thành viên U thay đổi không đáng kể (theo ngưỡng epsilon) hoặc số vòng lặp đạt mức tối đa, thì dừng thuật toán.
 # 3. Cài đặt thuật toán bằng ngôn ngữ Python 
+## • Yêu cầu hệ thống 
+- Python 3.8 hoặc mới hơn
+- Các thư viện Python cần thiết:
+  - `numpy`
+  - `matplotlib` (nếu cần vẽ đồ thị)
+## • Clone repository: 
+`git clone https://github.com/TUDONG05/BTL_python.git`
+
+## • Cài đặt môi trường ảo:
+### `python -m venv env`
+### `source env/bin/activate`    # Trên macOS/Linux
+### `env\Scripts\activate`       # Trên Windows
+## Cài đặt các thư viện cần thiết
+### - ` pip install -r requirements.txt1`
+## Sử dụng 
+### • Mở fcm_for.py hoặc fcm_np.py và sử dụng câu lệnh :
+`python fcm_for.py` hoặc `fcm_np.py`
+
+### BTL_python/
+### ├── fcm.py                # Thuật toán FCM cơ bản
+### ├── fcm_np.py             # Thuật toán FCM với NumPy
+### ├── Dry_Bean_Dataset.csv  # Dữ liệu bộ Dry Bean
+### ├── README.md             # Hướng dẫn sử dụng
+### └── requirements.txt      # Danh sách thư viện cần thiết
+
 ## a) Sử dụng thư viện numpy kết hợp với lập trình hướng đối tượng 
 ### • Nhập thư viện numpy 
 ![img_3.png](img_3.png)

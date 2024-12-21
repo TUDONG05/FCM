@@ -56,9 +56,7 @@
 ` pip install -r requirements.txt1`
 ## • Chạy chương trình  
 ### -  Mở fcm_for.py hoặc fcm_np.py và sử dụng câu lệnh :
-`python fcm_for.py` 
-### hoặc 
-`python fcm_np.py`
+`python fcm_for.py` hoặc `python fcm_np.py`
 
 ## a) Sử dụng thư viện numpy kết hợp với lập trình hướng đối tượng 
 ### • Nhập thư viện numpy 

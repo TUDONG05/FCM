@@ -54,7 +54,7 @@
 `env\Scripts\activate`      
 ## • Cài đặt các thư viện cần thiết
 ` pip install -r requirements.txt1`
-## • Sử dụng 
+## • Chạy chương trình  
 ### -  Mở fcm_for.py hoặc fcm_np.py và sử dụng câu lệnh :
 `python fcm_for.py` 
 ### hoặc 

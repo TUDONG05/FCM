@@ -47,15 +47,19 @@
 `git clone https://github.com/TUDONG05/BTL_python.git`
 
 ## • Cài đặt môi trường ảo:
-### `python -m venv env`
-### `source env/bin/activate`    # Trên macOS/Linux
-### `env\Scripts\activate`       # Trên Windows
+`python -m venv env`
+### Trên macOS/Linux
+`source env/bin/activate`
+### Trên Windows
+`env\Scripts\activate`      
 ## Cài đặt các thư viện cần thiết
-### - ` pip install -r requirements.txt1`
+- ` pip install -r requirements.txt1`
 ## Sử dụng 
 ### • Mở fcm_for.py hoặc fcm_np.py và sử dụng câu lệnh :
-`python fcm_for.py` hoặc `fcm_np.py`
-GIT
+`python fcm_for.py` 
+### hoặc 
+`python fcm_np.py`
+
 ## a) Sử dụng thư viện numpy kết hợp với lập trình hướng đối tượng 
 ### • Nhập thư viện numpy 
 ![img_3.png](img_3.png)

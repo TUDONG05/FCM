@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 class FCM:
     def __init__(self, x, n_clusters, m=2, max_iter=100, epsilon=1e-5):
-        self.x = np.array(x, dtype=np.float64)# các điểm dữ liệu
+        self.x = np.array(x, dtype=np.float64).reshape(-1,1)# các điểm dữ liệu
         self.n_clusters = n_clusters  # số cụm
         self.m = m  # chỉ số mờ
         self.max_iter = max_iter # số lần lặp tối  đa

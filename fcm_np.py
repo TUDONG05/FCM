@@ -72,9 +72,12 @@ class FCM:
 
 
 
-    def _sai_so(self, old_u):
+    def _check_exit(self, old_u):
         """tính sự chênh lệch giữa ma trận thành viên cũ và ma trận thành viên mới """
-        return np.linalg.norm(self.u - old_u)
+        if np.linalg.norm(self.u - old_u)<self.epsilon:
+            return True
+        else :
+            return False
 
 
     def fit(self):
@@ -85,7 +88,7 @@ class FCM:
             old_u = self.u.copy()
             self.centroids = self._capnhat_tamcum()  # Bước 2 : cập nhật tâm cụm
             self.u= self._capnhat_mttv()     # Bước 3: cập nhật ma trận thành viên
-            if self._sai_so(old_u) < self.epsilon:  # Bước 4: kiểm tra điều kiện hội tụ
+            if self._check_exit(old_u=old_u) :# Bước 4: kiểm tra điều kiện hội tụ
                 break
         time_end = time.time()
         self.time = time_end - time_start

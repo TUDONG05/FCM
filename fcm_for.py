@@ -60,12 +60,14 @@ class FCM:
 
                         M+=(t/m) **2/(self.m-1)
                     self.u[i][j] =1/M
-    def sai_so(self, old_u):
+    def _check_exit(self, old_u):
         """tính sự chênh lệch giữa ma trận thành viên cũ và ma trận thành viên mới """
         ss = 0
         for i in range(self.n_data):
             for j in range(self.n_clusters):
                 ss += abs(self.u[i][j] - old_u[i][j])
+        if ss > self.epsilon :
+            return True
         return ss
     
 
@@ -78,7 +80,7 @@ class FCM:
 
             self.capnhat_tamcum() # bước 2 : cập nhật tâm cụm
             self.capnhat_mttv()  # bước 3 : cập nhật ma trận thành viên
-            if self.sai_so(old_u) < self.epsilon:  # bước 4 : kiểm tra điều kiện hội tụ
+            if self._check_exit():  # bước 4 : kiểm tra điều kiện hội tụ
                 break
         return self.u, self.centroids
 

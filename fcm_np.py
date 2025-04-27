@@ -103,7 +103,7 @@ if __name__ == '__main__':
 
     ROUND_FLOAT = 3
     EPSILON = 1e-5
-    MAX_ITER = 100
+    MAX_ITER = 1000
     M = 2
     SEED = 42
     SPLIT = '\t'
@@ -112,7 +112,7 @@ if __name__ == '__main__':
     def wdvl(val: float, n: int = ROUND_FLOAT) -> str:
         return str(round_float(val, n=n))
 
-    def write_report_ssfcm(alg: str, index: int, process_time: float, step: int, X: np.ndarray, V: np.ndarray, U: np.ndarray) -> str:
+    def write_report(alg: str, index: int, process_time: float, step: int, X: np.ndarray, V: np.ndarray, U: np.ndarray) -> str:
         labels = extract_labels(U)  # Giai mo
         kqdg = [
             alg,
@@ -152,14 +152,14 @@ if __name__ == '__main__':
 
         # print('Ma tran u ngang: ', u_ngang)
         # print('Ma tran nhan: ', labels_all),
-        print('Ma tran tam cum: ', centroids)
+        # print('Ma tran tam cum: ', centroids)
         # print ('Ma tran thanh vien: ',u)
 
         
         # --------------------------------  
         titles = ['Alg', 'Time', 'Step', 'DI+', 'DB-', 'PC+', 'XB-', 'CE-','SI+','FHV-']
         print(SPLIT.join(titles))
-        print(write_report_ssfcm(alg='FCM', index=0, process_time=fcm.time, step=step, X=X, V=fcm.centroids, U=fcm.u))
+        print(write_report(alg='FCM', index=0, process_time=fcm.time, step=step, X=X, V=fcm.centroids, U=fcm.u))
 
 
         

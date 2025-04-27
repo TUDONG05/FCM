@@ -58,47 +58,8 @@
 ### -  Mở fcm_for.py hoặc fcm_np.py và sử dụng câu lệnh :
 `python fcm_for.py` hoặc `python fcm_np.py`
 
-## a) Sử dụng thư viện numpy kết hợp với lập trình hướng đối tượng 
-### • Nhập thư viện numpy 
-![img_3.png](img_3.png)
-### • Khai báo lớp FCM và hàm khởi tạo: 
-![img_2.png](img_2.png) 
-### • Hàm khởi tạo ma trận thành viên ngẫu nhiên 
-![img_4.png](img_4.png)
-### • Hàm cập nhật tâm cụm 
-![img_5.png](img_5.png)
-### • Hàm cập nhật ma trận thành viên 
-![img_6.png](img_6.png)
-### • Hàm tính sự chênh lệch giữa ma trận thành viên cũ và ma trận thành viên mới 
-![img_7.png](img_7.png)
-### • Hàm triển khai thuật toán Fuzzy C-Means 
-![img_8.png](img_8.png)
-### • Truyền dữ liệu và thực hiện 
-![img_9.png](img_9.png)
-### • Kết quả thu được 
-![img_10.png](img_10.png)
-
-## b) Sử dụng vòng lặp for kết hợp với lập trình hướng đối tượng 
-### • Nhập thư viện random 
-![img_11.png](img_11.png)
-### • Khai báo lớp FCM và hàm khởi tạo
-![img_13.png](img_13.png)
-### • Hàm khởi tạo ma trận thành viên ngẫu nhiên 
-![img_14.png](img_14.png)
-### • Hàm cập nhật tâm cụm 
-![img_15.png](img_15.png)
-### • Hàm tính khoảng cách từ điểm dữ liệu đến tâm cụm 
-![img_23.png](img_23.png)
-### • Hàm cập nhật ma trận thành viên 
-![img_17.png](img_17.png)
-### • Hàm tính sự chênh lệch giữa ma trận thành viên cũ và ma trận thành viên mới 
-![img_18.png](img_18.png)
-### • Hàm triển khai thuật toán Fuzzy C-Means 
-![img_24.png](img_24.png)
-### • Truyền dữ liệu và thực hiện 
-![img_20.png](img_20.png)
-### • Kết quả thu được 
-![img_21.png](img_21.png)
+## - Chất lượng phân cụm thu được 
+![img.png](img.png)
 # 4. Ưu điểm của FCM:
 ## • Xử lý mờ: FCM phù hợp với dữ liệu không có ranh giới rõ ràng, giúp phân cụm linh hoạt hơn K-Means.
 ## • Thông tin bổ sung: Mức độ thành viên cung cấp thêm thông tin về mối quan hệ giữa điểm dữ liệu và các cụm.

@@ -60,9 +60,10 @@ class FCM:
 
                         M+=(t/m) **2/(self.m-1)
                     self.u[i][j] =1/M
-    def _check_exit(self, old_u):
+    def _check_exit(self):
         """tính sự chênh lệch giữa ma trận thành viên cũ và ma trận thành viên mới """
         ss = 0
+        
         for i in range(self.n_data):
             for j in range(self.n_clusters):
                 ss += abs(self.u[i][j] - old_u[i][j])

@@ -59,11 +59,11 @@
 `python fcm_for.py` hoặc `python fcm_np.py`
 
 ## - Chất lượng phân cụm thu được 
-DATASET UCI id= 53 Iris 150 x 4
-Thời gian lấy dữ liệu: 0.004
-size=150 x 4
-Alg     Time    Step    DI+     DB-     PC+     XB-     CE-     SI+     FHV-
-FCM     0.0     14      0.66    0.67    0.674   0.11    0.396   0.549   0.783
+### DATASET UCI id= 53 Iris 150 x 4
+### Thời gian lấy dữ liệu: 0.004
+### size=150 x 4
+### Alg     Time    Step    DI+     DB-     PC+     XB-     CE-     SI+     FHV-
+### FCM     0.0     14      0.66    0.67    0.674   0.11    0.396   0.549   0.783
 
 # 4. Ưu điểm của FCM:
 ## • Xử lý mờ: FCM phù hợp với dữ liệu không có ranh giới rõ ràng, giúp phân cụm linh hoạt hơn K-Means.

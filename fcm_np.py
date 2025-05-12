@@ -18,7 +18,6 @@ class FCM:
         self.time = 0
         self.step = 0
         
-
     def _khoitao_tamcum(self):
         """Chọn ngẫu nhiên n_clusters điểm từ dữ liệu làm tâm cụm ban đầu"""
         np.random.seed(self.seed)
@@ -149,17 +148,10 @@ if __name__ == '__main__':
         
         fcm = FCM(X, n_clusters=n_clusters, m=M, max_iter=MAX_ITER, epsilon=EPSILON,seed=SEED)
         u,centroids,step=fcm.fit()
-
-        # print('Ma tran u ngang: ', u_ngang)
-        # print('Ma tran nhan: ', labels_all),
-        # print('Ma tran tam cum: ', centroids)
-        # print ('Ma tran thanh vien: ',u)
-
-        
         # --------------------------------  
         titles = ['Alg', 'Time', 'Step', 'DI+', 'DB-', 'PC+', 'XB-', 'CE-','SI+','FHV-']
         print(SPLIT.join(titles))
         print(write_report(alg='FCM', index=0, process_time=fcm.time, step=step, X=X, V=fcm.centroids, U=fcm.u))
 
 
-        
+        #ok 12/05/2025 
